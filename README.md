@@ -8,7 +8,7 @@ This repository is a collection of frontend projects that I have created while l
 ## Projects
 Here is a list of the projects included in this repository:
 
-1. **Project 1: Tic-Tac-Toe Game**
+1. **[Tic-Tac-Toe Game](https://hania-shafiq.github.io/FrontEndProjects/TicTacToeGame/)**
    - Description: A simple Tic-Tac-Toe game created using HTML, CSS, and JavaScript.
    - Status: Completed
  
