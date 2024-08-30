@@ -98,11 +98,14 @@ body{
     text-align: center; 
     margin:2rem;
     background-color: #757083;
-    width:9vw;
-    height:6vh;
+    width:14vw;
+    height:auto;
     border-radius:0.2rem;
     border-color: #474056;
-    font-size: 100%;
+    font-size: 80%;
+    max-width: 100%;
+    padding:2%;
+    font-weight: bolder;
 }
 .actionButton:hover{
     background-color: #8A95A5;
