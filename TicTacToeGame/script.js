@@ -6,7 +6,7 @@ window.onload = function() {
       document.getElementById("intro-screen").style.display = 'none';
       // Show the game container
       document.getElementById("game-container").style.display = 'block';
-  }, 4000); //4000ms=4sec
+  }, 3000); //3000ms=3sec
 };
 
 
@@ -41,7 +41,7 @@ const winPatterns = [
 turnO=true; //X or O
 count=0;
 const gameDraw = () => {
-  msg.innerText = `Game Draw.`;
+  msg.innerText = "OH NO! Game Draw ";
   messageContainer.classList.remove("hide");
   disableBoxes();
 };
