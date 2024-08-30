@@ -1,4 +1,3 @@
-
 #intro-screen {
     position: fixed;
     top: 0;
@@ -17,7 +16,7 @@
     height: auto; 
     animation: rotateImage 4s linear infinite;
 }
-/* Rotation keyframes */
+
 @keyframes rotateImage {
     0% {
         left: 0;
@@ -41,158 +40,175 @@
     }
 }
 
-
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     background-color: rgba(128, 128, 128, 0.696);
-    height:100vh;
-    display:flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box; 
 }
-.heading{
+
+.heading {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: bolder;
     font-style: normal;
     text-align: center;
     font-size: 4rem;
-    color:#090C08;
+    color: #090C08;
     margin-top: 1.9rem;
 }
-.game{
-    display:flex;
+
+.game {
+    display: flex;
     justify-content: center;
 }
-.boxes{
-    justify-content:center;
-    display:flex;
-    width:38vw;
-    height:38vw;
+
+.boxes {
+    justify-content: center;
+    display: flex;
+    width: 38vw;
+    height: 38vw;
     flex-wrap: wrap;
-    row-gap:0.2rem;
+    row-gap: 0.2rem;
     column-gap: 0.6rem;
-    
 }
-.box{
-    width:12vw;
-    height:12vw;
+
+.box {
+    width: 12vw;
+    height: 12vw;
     background-color: #8A95A5;
-    border-radius:0.7rem ;
-    border:none;
+    border-radius: 0.7rem;
+    border: none;
     justify-content: center;
-    font-size: 4rem;
-    color:#474056;
-    
+    font-size: 100%;
+    color: #474056;
+    object-fit: cover;
 }
-.box:hover{
+
+.box:hover {
     background-color: #757083;
 }
-#newButton,#resetButton{
+
+#newButton, #resetButton {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: bold;
     font-style: normal;
-    text-align: center; 
-    margin:2rem;
+    text-align: center;
+    margin: 2rem;
     background-color: #757083;
-    width:9vw;
-    height:6vh;
-    border-radius:0.2rem;
+    width: 9vw;
+    height: 6vh;
+    border-radius: 0.2rem;
     border-color: #474056;
-    font-size: 1vw;
+    font-size: 100%;
 }
-.actionButton:hover{
+
+.actionButton:hover {
     background-color: #8A95A5;
 }
-.msgContainer{
-    width:26.5vw;
-    height:6vh;
+
+.msgContainer {
+    width: 25%;
+    height: auto;
 }
-#msg{
+
+#msg {
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: normal;
     font-style: normal;
-    text-align: center; 
-    margin:2rem;
+    text-align: center;
     background-color: #757083;
-
-    border-radius:0.2rem;
+    border-radius: 0.2rem;
     border-color: #474056;
-    font-size: 3vw;
+    font-size: 100%;
+    padding: 0.5rem;
+    max-width: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box;
 }
-.hide{
-    display:none;
+
+.hide {
+    display: none;
 }
+
 @media (max-width: 963px) {
+
     .heading {
-        font-size: 3rem; /* Reduce heading size */
-        margin-top: 1rem; /* Adjust margin */
+        font-size: 3rem;
+        margin-top: 1rem;
     }
     
     .boxes {
-        width: 70vw; /* Increase width to fit more of the screen */
+        width: 70vw;
         height: 70vw;
     }
 
     .box {
-        width: 22vw; /* Adjust box size to fit within the container */
+        width: 22vw;
         height: 22vw;
     }
 
-    .newButton,.resetButton {
-        width: 20vw; /* Adjust button size */
+    .newButton, .resetButton {
+        width: 20vw;
         height: 8vh;
+        font-size: 100%;
+        max-width: 100%;
     }
 }
+
 @media (max-width: 480px) {
+
     .heading {
-        font-size: 2.5rem; /* Further reduce heading size */
-        margin-top: 0.5rem; /* Adjust margin */
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
     }
     
     .boxes {
-        width: 80vw; /* Increase width to fit more of the screen */
+        width: 80vw;
         height: 80vw;
     }
 
     .box {
-        width: 24vw; /* Adjust box size to fit within the container */
+        width: 24vw;
         height: 24vw;
     }
 
-    .newButton,.resetButton {
-        width: 25vw; /* Adjust button size */
+    .newButton, .resetButton {
+        width: 25vw;
         height: 10vh;
-        font-size: 2vw; /* Adjust font size */
+        font-size: 100%;
+        max-width: 100%;
     }
 }
+
 @media (max-width: 240px) {
+
     .heading {
-        font-size: 1.2rem; /* Further reduce heading size */
+        font-size: 1.2rem;
         margin-top: 0.1rem;
     }
     
     .boxes {
-        width: 90vw; /* Increase the container's width */
-        height: auto; /* Allow the height to adjust based on content */
+        width: 90vw;
+        height: auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns */
+        grid-template-columns: repeat(3, 1fr);
         gap: 0.2rem;
     }
 
     .box {
-        width: 25vw; /* Adjust box size to ensure they fit */
+        width: 25vw;
         height: 25vw;
     }
 
     .newButton, .resetButton {
-        width: 30vw; /* Adjust button size */
-        height: 10vh;
-        font-size: 3vw; /* Adjust font size */
+        width: 70vw;
+        height: auto;
+        font-size: 80%%;
+        max-width: 100%;
     }
 }
-
-
-
