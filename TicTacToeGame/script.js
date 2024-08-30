@@ -1,3 +1,15 @@
+// Wait until the page is fully loaded
+window.onload = function() {
+  // After 4 seconds, hide the intro screen and show the game
+  setTimeout(function() {
+      // Hide the intro screen
+      document.getElementById("intro-screen").style.display = 'none';
+      // Show the game container
+      document.getElementById("game-container").style.display = 'block';
+  }, 4000); //4000ms=4sec
+};
+
+
 let boxes=document.querySelectorAll(".box");
 let rstBtn=document.querySelector("#resetButton");
 let newGame=document.querySelector("#newButton");
@@ -27,21 +39,30 @@ const winPatterns = [
     }
   };  
 turnO=true; //X or O
+count=0;
+const gameDraw = () => {
+  msg.innerText = `Game Draw.`;
+  messageContainer.classList.remove("hide");
+  disableBoxes();
+};
 
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turnO){
-            console.log("Box clicked!"); 
             box.innerText="O";
             turnO=false;
         }
         else{
-            console.log("Box clicked!"); 
             box.innerText="X";
             turnO=true;
         }
         box.disabled=true;
-        checkWinner();
+        count++
+        let isWinner = checkWinner();
+        if (count === 9 && !isWinner) {
+          gameDraw();
+      
+        }
     })
 })
 const disableBoxes = () => {
@@ -49,6 +70,7 @@ const disableBoxes = () => {
       box.disabled = true;
     }
   };
+
 const showWinner=(winner)=>{
     msg.innerText=`Congratulations! winner is ${winner}`;
     messageContainer.classList.remove("hide");
