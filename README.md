@@ -16,7 +16,7 @@ Here is a list of the projects included in this repository:
    - Description: A simple Tic-Tac-Toe game created using HTML, CSS, and JavaScript.
    - Status: Completed
    - **How to Check It**: Click on the link above to view and interact with the Tic-Tac-Toe game. It will open in your web browser where you can play the game.
-2. **[Calculator](
+2. **[Calculator](https://github.com/Hania-Shafiq/FrontEndProjects/tree/main/Calculator)**
 
    - Description: A functional calculator created with HTML, CSS, and JavaScript. It supports basic arithmetic operations such as 
                   addition, subtraction, multiplication, and division.
