@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height:100vh; /*it will move the content to  the center of the browser(vertically)*/
+    background-color: blueviolet;
+}
+
+.button{
+    position:relavtive;
+    padding:10px 10px;
+    font-size: 1.5rem;
+    background-color: white;
+    display:inline-block;
+    border-radius: 4px;
+    transition:0.5s;
+    text-decoration: none;
+    cursor:pointer;
+    color:blueviolet;
+}
+
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+
+#newsLetter{
+    position:fixed;
+    top:-100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 1000;
+    width:450px;
+    padding:80px 50px 50px;
+    border-radius: 5px;
+    visibility:hidden;
+
+}
+
+#newsLetter.active{
+    visibility: visible;
+    top:50%;
+}
+
+#newsletter h2,p{
+    color:blueviolet;
+    text-align: center;
+    margin:1%;
+    display: flex;
+    justify-content: center;  
+}
+
+#newsletter .box{
+    position:relative;
+    width: 100%;
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,button{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding:15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    border:none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.close{
+    position:absolute;
+    cursor:pointer;
+    top:15px;
+    right:20px;
+}
+
+
+
