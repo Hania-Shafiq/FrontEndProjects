@@ -1,10 +1,13 @@
 *{
     margin:0;
     padding:0;
+    text-align: center;
 }
+
 body{
     background-color: #e5ecd4;
 }
+
 header{
     display: flex;
     flex-direction: row;
@@ -15,8 +18,9 @@ header{
     border-bottom: 0.12vw solid  #090c02;
     box-sizing: border-box;
 }
+
 header>#img>img{
-    height:6.5vw;
+    height:13vh;
     width:auto;
     padding:1%;
 }
@@ -24,11 +28,13 @@ header>#img>img{
     margin-top:2vh;
     margin-left:21vw;
 }
+
 #title>h1{
     font-size:8vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 #p1{
     color:#e5ecd4;
 }
@@ -41,30 +47,61 @@ header>#img>img{
 #p4{
     color:#e5ecd4;
 }
-.actionImages{
+.choices{
     display:flex;
-    gap:2%;
+    gap:35rem;
     justify-content: center;
     transform:scale(0.3);
-    margin-top: 0px;  
+    margin-top: 1rem;  
+    margin-bottom: 5rem;
+    margin-right: 6.75rem;
+    align-items: center;
 }
-.main{
-    display:flex;
-    justify-content:center;
-    text-align: center;
-    flex-direction: column;
-    gap:2px;
-}
-#m1{
-    margin-top: 15vh;
+.choice{
+    height:200px;
+    width:200px;
 }
 
-.actionImages>img{
-    border-radius: 50%;
+.choice>img{
+    border-radius:50%;
     border:0.3vw solid #090c02;
+    object-fit: cover;
 }
-.actionImages>img:hover{
-    transform:scale(0.9);
-    border:2vw solid #090c02;
+
+.choices>.choice>img:hover {
+    transform: scale(1.1); 
+    border: 1vw solid #090c02;
     cursor: pointer;
+    opacity: 0.95;
+    transition: transform 0.2s ease-in-out; 
 }
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap:5rem;
+}
+
+#user-score,#comp-score{
+    font-size: 4rem;
+    margin:3px;
+
+}
+
+#message{
+    background:linear-gradient( #bba69084,#a7250872);
+    color: #090c02;
+    display:inline-block;
+    font-size: 2rem;
+    border:1px solid #090c022b;
+    padding:4px;
+    
+}
+
+.message-container{
+    margin-top: 3.0rem;
+}
+/*@mediaquery 688 will add it later*/

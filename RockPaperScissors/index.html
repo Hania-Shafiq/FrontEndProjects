@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/title.png">
+
 </head>
 <body>
+    <!--heaader---------------------------------------------->
     <header>
         <div id="img">
             <img src="images/title.png" alt="title">
@@ -20,16 +23,37 @@
             </h1>
         </div>
     </header>
-    <main class="main">
-        <div id="m1">
-            <h3>Rock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paper &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scissors</h3>
+
+    <!--choices----------------------------------------------->
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="rock image">
         </div>
-        <div class="actionImages">
-             <img src="images/rock.png" alt="rock image">
+        <div class="choice" id="paper">
              <img src="images/paper.png" alt="paper image">
-             <img src="images/scissors.png" alt="scissorsimage">
         </div>
-    </main>
-    
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="scissorsimage">
+        </div>
+    </div>
+
+    <!--score------------------------------------------------->
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>   
+    </div>
+
+    <!--message------------------------------------------------>
+    <div class="message-container">
+        <p id="message"> Play your Move</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
