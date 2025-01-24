@@ -33,5 +33,10 @@ Here is a list of the projects included in this repository:
    - Status: Completed
    - **How to Check It**: Click on the link above to see the article popup. You can trigger the popup by clicking the button on the webpage.
 
+5. **[Portfolio](https://hania-shafiq.github.io/FrontEndProjects/Portfolio/)**
+   - Description: A personal portfolio webpage showcasing my skills, projects, and background. Built with HTML, CSS, and JavaScript to provide a professional online presence.
+   - Status: In Progress
+   - **How to Check It**: Click on the link above to explore my portfolio. It will open in your web browser where you can see my work and contact details.
+
 ## How to Run the Projects
 To view and interact with any of the projects in this repository, simply click on the project link provided. This will open the project in your web browser.
