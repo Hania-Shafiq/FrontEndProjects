@@ -37,6 +37,10 @@ Here is a list of the projects included in this repository:
    - Description: A personal portfolio webpage showcasing my skills, projects, and background. Built with HTML, CSS, and JavaScript to provide a professional online presence.
    - Status: In Progress
    - **How to Check It**: Click on the link above to explore my portfolio. It will open in your web browser where you can see my work and contact details.
+6. **[Rock-Paper-Scissors Game](https://hania-shafiq.github.io/FrontEndProjects/RockPaperScissors/)**
+   - **Description**: A fun Rock-Paper-Scissors game developed using HTML, CSS, and JavaScript. It allows you to play against the computer and keeps track of scores.
+   - **Status**: Completed
+   - **How to Check It**: Click on the link above to play the game. Select rock, paper, or scissors to compete against the computer.
 
 ## How to Run the Projects
 To view and interact with any of the projects in this repository, simply click on the project link provided. This will open the project in your web browser.
