@@ -14,7 +14,7 @@ body{
 }
 
 .button{
-    position:relavtive;
+    position:relative;
     padding:10px 10px;
     font-size: 1.5rem;
     background-color: white;
@@ -76,6 +76,7 @@ input,button{
 
 button{
     border:none;
+    margin-top:0.2rem;
     width: 150px;
     letter-spacing: 0.1rem;
     background-color: blueviolet;
