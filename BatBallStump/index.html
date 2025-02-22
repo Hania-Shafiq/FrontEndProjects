@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Bat Ball Stump <span><button class="reset" onclick="resetScore()">Reset</button>
+        </span></h1>
+    </div>
+<div class="container">
+    <div class="bat">
+        <img src="images/bat.png" alt="bat">
+        <button onclick="playGame('Bat')" class="action">Bat</button></div>
+    <div class="ball">
+        <img src="images/ball.png" alt="">
+        <button onclick="playGame('Ball')" class="action">Ball</button></div>
+    <div class="stump">
+        <img src="images/stump.png" alt="stump">
+        <button onclick="playGame('Stump')" class="action">Stump</button></div>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        let score = JSON.parse(localStorage.getItem('Score')) || {win: 0, lose: 0, tie: 0};
+
+// Function to display score
+score.displayScore = function () {
+    return `Win: ${this.win}, Lose: ${this.lose}, Tie: ${this.tie}.`;
+};
+function resetScore() {
+    localStorage.clear(); // Local storage remove 
+    score = { win: 0, lose: 0, tie: 0 }; // Score object reset
+    
+    // Redefining displayScore function
+    score.displayScore = function () {
+        return `Win: ${this.win}, Lose: ${this.lose}, Tie: ${this.tie}.`;
+    };
+
+    localStorage.setItem('Score', JSON.stringify(score)); // Saving new reset score
+    document.getElementById("result").innerText = score.displayScore(); // Updating UI
+}
+
+
+function playGame(playerChoice) {
+    let randomNumber = Math.random() * 3;
+    let computerChoice;
+
+    if (randomNumber <= 1) {
+        computerChoice = 'Bat';
+    } else if (randomNumber <= 2) {
+        computerChoice = 'Ball';
+    } else {
+        computerChoice = 'Stump';
+    }
+
+    let result;
+    if (playerChoice === computerChoice) {
+        result = "It's a Tie!";
+        score.tie++;
+    } else if (
+        (playerChoice === 'Bat' && computerChoice === 'Ball') ||
+        (playerChoice === 'Ball' && computerChoice === 'Stump') ||
+        (playerChoice === 'Stump' && computerChoice === 'Bat')
+    ) {
+        result = "You Win! 🎉";
+        score.win++;
+    } else {
+        result = "Computer Wins! 😢";
+        score.lose++;
+    }
+
+    // store score in local storage
+    localStorage.setItem('Score', JSON.stringify(score));
+
+    document.getElementById("result").innerText = `Player: ${playerChoice} | Computer: ${computerChoice} | ${result}
+    ${score.displayScore()}`;
+}
+
+// display previous score as page loads
+document.getElementById("result").innerText = score.displayScore();
+
+        
+    </script>
+</body>
+</html>

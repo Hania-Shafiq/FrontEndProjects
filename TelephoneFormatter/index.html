@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Formatter</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            text-align: center;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        .container{
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        input{
+            font-size: 1.5rem;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-align: center;
+            outline: none;
+        }
+
+        h1{
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        p{
+            font-size: 1.2rem;
+            color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Telephone Formatter</h1>
+        <input type="text" id="phone-input" placeholder="Phone Number" maxlength="16">
+        <p>+(123) - 4725786</p>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

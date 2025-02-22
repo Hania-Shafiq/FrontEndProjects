@@ -1,0 +1,31 @@
+body{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor:pointer;
+    border: none;
+    border-radius: 5px;
+    margin:9px;
+}
+#grey{
+    background-color: grey;
+    color:white;
+}
+#white{
+    background-color: white;
+    color:black;
+}
+#blue{
+    background-color: blue;
+    color:white;
+}
+#yellow{
+    background-color: yellow;
+    color:black;
+}
