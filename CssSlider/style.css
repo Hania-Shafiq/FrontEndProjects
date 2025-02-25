@@ -77,3 +77,32 @@ input[type="color"] {
 .css-controller input[type="range"] {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .css-controller input[type="range"] {
+        max-width: 250px;
+    }
+}
