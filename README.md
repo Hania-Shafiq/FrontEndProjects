@@ -66,10 +66,7 @@ This repository is a collection of frontend projects that I have created while l
 18. **[Article Popup](https://hania-shafiq.github.io/FrontEndProjects/ArticlePopUp/)**
     - A stylish popup that displays an article with animations.
 
-19. **[Portfolio](https://hania-shafiq.github.io/FrontEndProjects/Portfolio/)**
-    - A practice portfolio created to experiment with layout, styling, and responsiveness.
-
-20. **[Code Editor](https://hania-shafiq.github.io/FrontEndProjects/CodeEditor/)**
+19. **[Code Editor](https://hania-shafiq.github.io/FrontEndProjects/CodeEditor/)**
     - A basic online code editor for writing and previewing HTML, CSS, and JavaScript.
 
 21. **[To-Do App](https://hania-shafiq.github.io/FrontEndProjects/ToDoApp/)**
